@@ -5,5 +5,6 @@ class Person < ApplicationRecord
     validates :title, presence: true, length: { maximum: 100 }
     validates :photo, presence: true, format: { with: /\Ahttps?:\/\/.*\z/,
                                                 message: 'must be a valid URL' }
+    validates :biography, presence: true
 end
   
