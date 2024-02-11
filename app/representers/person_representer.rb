@@ -9,6 +9,7 @@ class PersonRepresenter
         name: @person.name,
         title: @person.title,
         photo: @person.photo,
+        biography: @person.biography,
         created_at: @person.created_at,
       }
     end
